@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "devbridge-ai"
+version = "0.1.0"
+description = "Open-source, privacy-first code review CLI with optional AI feedback"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+authors = [{name = "DevBridge AI contributors"}]
+keywords = ["developer-tools", "code-review", "ai", "cli"]
+classifiers = ["Programming Language :: Python :: 3", "License :: OSI Approved :: MIT License"]
+
+[project.scripts]
+devbridge = "devbridge_ai.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
